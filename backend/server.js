@@ -13,7 +13,10 @@ connectDB();
 const app = express();
 
 app.use(cors({
-  origin:"http://localhost:5173",
+  origin:[
+    "https://expense-tracker-server-flame.vercel.app",
+    "http://localhost:5173"
+  ],
   credentials: true
 }));
 
