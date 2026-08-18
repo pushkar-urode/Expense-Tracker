@@ -14,8 +14,6 @@ const app = express();
 
 app.use(cors({
   origin:[
-    "https://expense-tracker-pied-gamma-45.vercel.app",
-    "https://expense-tracker-server-flame.vercel.app",
     "http://localhost:5173"
   ],
   credentials: true
